@@ -1,0 +1,25 @@
+<html>
+    <title>Submit Form without page refresh - PHP/Jquery - Tecadmin</title>
+    <head>
+        <script type="text/javascript" src="jquery-3.4.1.js"></script>
+        <script type="text/javascript" src="submit.js"></script>
+    </head>
+    <body>
+        <form id="myForm" method="post">
+            Name:    <input name="name" id="name" type="text" /><br />
+            Email:   <input name="email" id="email" type="text" /><br />
+            Phone No:<input name="phone" id="phone" type="text" /><br />
+            Gender:  <input name="gender" type="radio" value="male">Male
+                 <input name="gender" type="radio" value="female">Female<br />
+            <input type="button" id="submitFormData" onclick="SubmitFormData();" value="submit" />
+            <!-- parameterd id yang digunakan sebagai identitas di javascrit , perhatikab properties onclick -->
+        </form>
+        <br/>
+        Datamu akan ditampilkan di bawah ini .... <br/>
+        ========================================<br/>
+        <div id="results">
+            <!-- Semua data akan ditampilkan disini -->
+            <!-- reference : https://tecadmin.net/submit-form-without-page-refresh-php-jquery/ -->
+        </div>
+    </body>
+</html>
